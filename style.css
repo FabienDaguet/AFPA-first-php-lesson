@@ -1,0 +1,35 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: rgb(107, 107, 233);
+    list-style: none;
+}
+
+.menu-list {
+    text-decoration: none;
+}
+
+.footer {
+    list-style: none;
+}
+
+.tableMulti td, .tableMulti th{
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+.tableMulti {
+    border-collapse: collapse;
+}
+
+.multiHead {
+    background-color: rgb(252, 250, 153);
+    color: red;
+}
+
+.byThem {
+    background-color: chartreuse;
+}
