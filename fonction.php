@@ -30,37 +30,55 @@
         return $resultat;
     }
 
-    function multipli                                                                   ($taille) {
+    function multipli($taille) {
+        '<div class="multiplication__container">';
         for($i = 1; $i <= $taille; $i++) {
+            echo '<div class="multiplication__card">';
+            echo '<div class="multiplication__card-text">Table de ' . $i . '</div>';
             for($j = 1; $j <= $taille; $j++) {
                 $result = $i * $j;
+                echo '<div class="multiplication__card-result">';
                 echo $i . " x " . $j . " = " . $result . "<br>";
+                echo '</div>';
             }
+            echo '</div>';
             echo "<br>";
         }
+        '</div>';
     }
 
 
     function multi($taille) {
         echo '<table class="tableMulti">';
         echo '<tr>';
-        echo '<th class="multiHead"></th>';
+        echo '<th class="tableMulti--form multiHead multiHead--border-bottom multiHead--border-rigth"></th>';
         for($j = 1; $j <= $taille; $j++) {
-            echo '<th class="multiHead">' . $j . '</th>';
+            echo '<th class="tableMulti--form multiHead multiHead--border-bottom">' . $j . '</th>';
         }
-
+        echo '</tr>';
         for($i = 1; $i <= $taille; $i++) {
             echo '<tr>';
-            echo '<th class="multiHead">' .$i . '</th>';
+            echo '<th class="tableMulti--form multiHead multiHead--border-rigth">' .$i . '</th>';
             for($j = 1; $j <= $taille; $j++) {
                 if ($i === $j) {
-                    echo '<td class="byThem">' . $i * $j . '</td>';
+                    echo '<td class="tableMulti--form green">' . $i * $j . '</td>';
                 } else {
-                echo '<td>' . $i * $j . '</td>';
-
+                echo '<td class="tableMulti--form">' . $i * $j . '</td>';
                 }
             }
             echo '</tr>';
         }
+        echo '</table>';
+    }
+
+    function test($taille) {
+        echo '<table>';
+        for($i = 1; $i <= $taille; $i++) {
+            echo '<tr>';
+            for($j = 1; $j <= $taille; $j++) {
+                echo $i*$j;
+            }
+            echo '</tr>';
+        } 
         echo '</table>';
     }

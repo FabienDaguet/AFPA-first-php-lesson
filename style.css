@@ -15,10 +15,14 @@
     list-style: none;
 }
 
-.tableMulti td, .tableMulti th{
-    border: 1px solid grey;
-    border-collapse: collapse;
+.green {
+    background-color: chartreuse;
+}
+
+.tableMulti--form {
+    border: 1px solid rgb(170, 170, 170);
     padding: 0.5rem;
+    text-align: center;
 }
 
 .tableMulti {
@@ -30,6 +34,31 @@
     color: red;
 }
 
-.byThem {
-    background-color: chartreuse;
+.multiHead--border-bottom {
+    border-bottom: 2px solid black;
+}
+
+.multiHead--border-rigth {
+    border-right: 2px solid black;
+}
+
+.multiplication__container {
+    display: flex;
+}
+
+.multiplication__card {
+    width: 10%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.multiplication__card-result {
+    border-top: 1px solid black;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.multiplication__card-text {
+    margin-bottom: 0.5rem;
 }
