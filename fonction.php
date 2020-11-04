@@ -31,7 +31,7 @@
     }
 
     function multipli($taille) {
-        '<div class="multiplication__container">';
+        echo '<div class="multiplication__container">';
         for($i = 1; $i <= $taille; $i++) {
             echo '<div class="multiplication__card">';
             echo '<div class="multiplication__card-text">Table de ' . $i . '</div>';
@@ -42,7 +42,7 @@
                 echo '</div>';
             }
             echo '</div>';
-            echo "<br>";
+            
         }
         '</div>';
     }

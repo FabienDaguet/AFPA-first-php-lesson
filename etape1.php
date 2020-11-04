@@ -162,7 +162,7 @@
 
 <div>
     <h1>Boucle FOR plusieurs tableaux dynamic exercice</h1>
-    <?= multipli(5) ?>
+    <?= multipli(10) ?>
 </div>
 
 <?php include("etape1_footer.php"); ?>    
